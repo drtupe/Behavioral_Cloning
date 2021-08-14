@@ -6,7 +6,7 @@
 
 ---
 
-! [](sample.gif)
+[](sample.gif)
 
 **Behavioral Cloning Project**
 
