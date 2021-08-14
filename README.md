@@ -1,9 +1,5 @@
 # **Behavioral Cloning** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
 ---
 
 <img src="sample.gif">
@@ -106,7 +102,7 @@ Finally, the model is compiled using a Mean Square Error (MSE) loss function and
 
 The number of Epochs were set to 7 for training the network. Following is the result of those 7 Epoches.
 
-<img src="examples/Epoches.png">
+<img src="examples/Epochs.png">
 
 
 ## Conclusion and Future Direction
