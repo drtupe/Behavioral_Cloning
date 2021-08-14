@@ -6,7 +6,7 @@
 
 ---
 
-[](sample.gif)
+<img src="sample.gif">
 
 **Behavioral Cloning Project**
 
