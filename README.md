@@ -31,7 +31,7 @@ The goals / steps of this project are the following:
 [image7]: ./examples/placeholder_small.png "Flipped Image"
 
 
-## Rubric Points
+## Rubric Points:
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
 
 ---
@@ -49,14 +49,14 @@ This reprository contains following five files:
 
 The finalPipeline.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
-## The Objective of the Project
+## The Objective of the Project:
 
 The main objective was to create and validate a CNN model that clones a driving behavior from a simulator. A Simulator which allowed to collect data like steering angle and capture surrounding environment with the help of 3 cameras mounted on left, center and right side of the vehicle. Following is the snapshot of data collected:
 
 <img src="examples/driving_log_snap.png">
 
 
-## Data Collection Strategy
+## Data Collection Strategy:
 
 For collecting data, 2 laps of the track has been completed as follows:
 
@@ -64,7 +64,7 @@ For collecting data, 2 laps of the track has been completed as follows:
 
 * During second lap, unstable driving was carried out that is by intentionally swarling the car from left corner to right corner of the road.
 
-## The Pipeline
+## The Pipeline:
 
 ### 1) Loading the raw data
 
@@ -105,7 +105,7 @@ The number of Epochs were set to 7 for training the network. Following is the re
 <img src="examples/Epochs.png">
 
 
-## Conclusion and Future Direction
+## Conclusion and Future Direction:
 
 In this project, I worked on regression problem in the context of self-driving cars. Initially, the main focus was on to finding a suitable network architecture and train a model using our own dataset. According to Mean Square Error (MSE) our model worked well. Also, by using data Augmentation we were further able to improve the performance of the network.
 
