@@ -4,8 +4,6 @@
 
 <img src="sample.gif">
 
-**Behavioral Cloning Project**
-
 In this project, I have used what I've learned about deep neural networks and convolutional neural networks to clone driving behavior. I have trained, validated and tested a model using Keras for completing this project. The CNN architecture used here is referenced from NVIDIA's [End to End Learing from Self-Driving Cars paper](https://arxiv.org/pdf/1604.07316v1.pdf)
 
 I have used a simulator from where I can steer a car around a track for data collection. I'll use image data and steering angles to train a neural network and then use this model to drive the car autonomously around the track.
@@ -31,13 +29,7 @@ The goals / steps of this project are the following:
 [image7]: ./examples/placeholder_small.png "Flipped Image"
 
 
-## Rubric Points:
-### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
-
----
-### Files Submitted & Code Quality
-
-#### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
+## Project includes all required files which can be used to run the simulator in autonomous mode
 
 This reprository contains following five files:
 
@@ -66,27 +58,27 @@ For collecting data, 2 laps of the track has been completed as follows:
 
 ## The Pipeline:
 
-### 1) Loading the raw data
+### 1) Loading the raw data:
 
 In this step, we have to first make all the collected data readable by our code, such as reading the images corrosponding to those images what steering inputs were given and so on.
 
-### 2) Dataset Summary and Visual Exploration
+### 2) Dataset Summary and Visual Exploration:
 
 The dataset contains 8244 camera images in total that is 2748 for each camera. Random 3 camera sets are visualized to check whether the data is imported successfully. Following is their visualization:
 
 <img src="examples/Data_Exploration.png">
 
-### 3) Data Augmentation
+### 3) Data Augmentation:
 
 The images captured by the cameras have a lot of irrelevent parts which are nothing but distraction for the neural network. So I cropped to remove irrelevent parts of the image such as the hood of the car and the sky as you can see in the image above.
 
 Also, we did not have equal amount of left and right turns throughout the track. So, to counter this issue I flipped all the images and also multiplied their steering angles with -1 so that steering angles are also flipped along with the images.
 
-### 4) Image Pre-Processing
+### 4) Image Pre-Processing:
 
 In image pre-processing I didn't carried out much steps except image resizing. As the outcome of the architecture was good as expected, I didn't felt the need to further process the image.
 
-### 5) CNN Architecture
+### 5) CNN Architecture:
 
 Following is the architecture of CNN I used to train my model:
 
@@ -96,7 +88,7 @@ This architecture is developed by NVIDIA for end to end learing for Self-Driving
 
 Reference : https://arxiv.org/pdf/1604.07316v1.pdf
 
-### 6) Compiling and saving the model
+### 6) Compiling and saving the model:
 
 Finally, the model is compiled using a Mean Square Error (MSE) loss function and Adaptive moment estimation optimizer (ADAM) which reduced the efforts of manually training the learing rate. validation split was set to 20% of the data.
 
