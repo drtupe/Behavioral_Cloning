@@ -29,7 +29,7 @@ The goals / steps of this project are the following:
 [image7]: ./examples/placeholder_small.png "Flipped Image"
 
 
-## Project includes all required files which can be used to run the simulator in autonomous mode
+## Project includes all required files which can be used to run the simulator in autonomous mode:
 
 This reprository contains following five files:
 
